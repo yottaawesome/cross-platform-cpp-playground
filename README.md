@@ -22,7 +22,7 @@ Visual Studio's Clang support requires installing the Clang components -- [follo
 * Install the required tools for Visual Studio on your WSL2 VM: `sudo apt install -y openssh-server build-essential gdb rsync make zip`
 * [Enable SSH on the VM](https://jmmv.dev/2022/02/wsl-ssh-access.html). Test locally with `ssh -p 22 <username>@localhost`.
 * Configure Visual Studio  to connect to the VM: `TOOLS > Options > Cross Platform > Connection Manager`.
-* [Install additional GCC/g++ versions if necessary](https://phoenixnap.com/kb/install-gcc-ubuntu). Update the C++ Compiler option to point to the preferred compiler (and don't forget to change the language standard and enable additional flags like `-fmodules-ts` as appropriate for your compiler).
+* [Install additional GCC/g++ versions if necessary](https://phoenixnap.com/kb/install-gcc-ubuntu) (I use GCC-13/g++-13). Update the C++ Compiler option to point to the preferred compiler (and don't forget to change the language standard and enable additional flags like `-fmodules-ts` as appropriate for your compiler).
 * You should be able to open the solution and build any one of the projects. If building for Linux, your WSL2 distro _needs_ to be running (you can log into it with `wsl ~` assuming you've set it as your default).
 
 ## Notes
