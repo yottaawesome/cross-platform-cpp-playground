@@ -10,6 +10,12 @@ This repo is for experimenting with building cross-platform C++ in Visual Studio
 
 This repo assumes you work on a Windows machine with WSL2 and that Visual Studio 2022 is your primary IDE.
 
+#### Building for Clang
+
+Visual Studio's Clang support requires installing the Clang components -- [follow this for more info](https://learn.microsoft.com/en-us/cpp/build/clang-support-msbuild?view=msvc-170).
+
+#### Building for Linux
+
 * You need a WSL2 distro running on your machine. I use Ubuntu.
 * Install the required tools for Visual Studio on your WSL2 VM: `sudo apt install -y openssh-server build-essential gdb rsync make zip`
 * [Enable SSH on the VM](https://jmmv.dev/2022/02/wsl-ssh-access.html). Test locally with `ssh -p 22 <username>@localhost`.
