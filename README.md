@@ -23,7 +23,11 @@ Visual Studio's Clang support requires installing the Clang components -- [follo
 * [Install additional GCC/g++ versions if necessary](https://phoenixnap.com/kb/install-gcc-ubuntu). Update the C++ Compiler option to point to the preferred compiler (and don't forget to change the language standard and enable additional flags like `-fmodules-ts` as appropriate for your compiler).
 * You should be able to open the solution and build any one of the projects.
 
-### Additional resources
+## Notes
+
+GCC's and Clang's support for C++20 modules is still a bit flaky. In GCC-13, #including <chrono> appears to cause an ICE. I wasn't able to get modules behaving in Visual Studio with Clang, but I could build them by dropping to the `x64 Native Tools Command Prompt for VS 2022` tool and following Rainer Grimm's instructions (linked below).
+
+## Additional resources
 
 * [C++20: Module Support of the Big Three](https://www.modernescpp.com/index.php/c20-module-support-of-the-big-three-compilers/)
 * [C++20: More Details about Module Support of the Big Three](https://www.modernescpp.com/index.php/c20-more-details-about-module-support-of-the-big-three/)

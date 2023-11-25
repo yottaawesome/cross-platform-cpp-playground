@@ -1,5 +1,7 @@
 module;
 
+#include <iostream>
+
 module somemodule;
 
 // GCC craps out if the implementation file 
@@ -8,5 +10,6 @@ namespace SomeModule
 {
 	void SomeFunction() 
 	{
+		std::cout << "Hello, world!\n";
 	}
 }
