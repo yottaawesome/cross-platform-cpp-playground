@@ -82,9 +82,6 @@
     <ClCompile Include="somemodule.impl.cpp" />
     <ClCompile Include="somemodule.ixx" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="README.md" />
-  </ItemGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <CppLanguageStandard>c++20</CppLanguageStandard>
