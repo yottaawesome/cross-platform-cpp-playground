@@ -25,7 +25,7 @@ Visual Studio's Clang support requires installing the Clang components -- [follo
 
 ## Notes
 
-GCC's and Clang's support for C++20 modules is still a bit flaky. In GCC-13, #including <chrono> appears to cause an ICE. I wasn't able to get modules behaving in Visual Studio with Clang, but I could build them by dropping to the `x64 Native Tools Command Prompt for VS 2022` tool and following Rainer Grimm's instructions (linked below).
+GCC's and Clang's support for C++20 modules is still a bit flaky and lags behind MSVC's support. In GCC-13, `#including <chrono>` appears to cause an ICE and GCC also appears to dislike it when a module implementation unit (e.g. `somemodule.cpp`) has the same name as its module interface unit (e.g. `somemodule.ixx`). I wasn't able to get modules behaving in Visual Studio with Clang, but I could build them by dropping to the `x64 Native Tools Command Prompt for VS 2022` tool and following Rainer Grimm's instructions (linked below). One thing to note with Clang's implementation is the `.cppm` extension that gets compiled into a `.pcm` file.
 
 ## Additional resources
 
