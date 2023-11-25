@@ -10,7 +10,7 @@ I intend to add CMake into the mix at some point, just to make things even more 
 
 ### Set up
 
-This repo assumes you work on a Windows machine with WSL2 and that Visual Studio 2022 is your primary IDE.
+This repo assumes you work on a Windows machine with WSL2 and that Visual Studio 2022 is your primary IDE. You'll need the _Desktop development with C++_ and the _Linux and embedded development with C++_ workloads. Building for Clang requires the _C++ Clang Compiler for Windows_ and _MSBuild Support for LLVM (clang-cl) toolset_ optional components.
 
 ### Building for Clang
 
