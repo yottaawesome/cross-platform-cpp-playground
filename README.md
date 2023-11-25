@@ -4,6 +4,8 @@
 
 This repo is for experimenting with building cross-platform C++ in Visual Studio (with an emphasis on module-based code) across Windows and Linux and across the big three C++ compilers: MSVC, GCC and Clang. It also functions as a useful testing ground for evaluating support of various different C++ features across the big three compilers. This repo was originally borne out of some experiments I did in my cpp-playground repo, before I realised this isn't just any other random experiment, but something worthwhile pursuing in a separate repo.
 
+I intend to add CMake into the mix at some point, just to make things even more complicated.
+
 ## Cross-compiling and building C++ with Visual Studio
 
 ### Set up
