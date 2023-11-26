@@ -1,13 +1,19 @@
-From a x64 Visual Studio Native Developer Command Prompt
+# Building modules with Clang and Visual Studio
 
-## Method 1
+## Introduction
+
+Of the big three C++ compilers, Clang's support for C++ modules seems to be the weakest. The tooling support in Visual Studio for Clang also appears to be the weakest with GCC seemingly better supported. Nevertheless, this README details how to build modules via the VS developer command prompt. These instructions are adapted from Rainer Grimm's blog posts [here](https://www.modernescpp.com/index.php/c20-module-support-of-the-big-three-compilers/) and [here](https://www.modernescpp.com/index.php/c20-more-details-about-module-support-of-the-big-three/).
+
+## Building from the `x64 Visual Studio Native Developer Command Prompt`
+
+### Method 1
 
 ```
 clang++ -std=c++20 -c somemodule.cppm --precompile -o somemodule.pcm
 clang++ -std=c++20 main.cpp -fprebuilt-module-path=. somemodule.pcm -o test.exe
 ```
 
-## Method 2
+### Method 2
 
 Compile module to pcm:
 
