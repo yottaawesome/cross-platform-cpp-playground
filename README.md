@@ -37,3 +37,6 @@ GCC's and Clang's support for C++20 modules is still a bit flaky and lags behind
 * [Walkthrough: Build and debug C++ with WSL 2 and Visual Studio 2022](https://learn.microsoft.com/en-us/cpp/build/walkthrough-build-debug-wsl2?view=msvc-170)
 * [Tutorial: Create C++ cross-platform projects in Visual Studio](https://learn.microsoft.com/en-us/cpp/build/get-started-linux-cmake?view=msvc-170)
 * [C++ Compiler Support](https://en.cppreference.com/w/cpp/compiler_support): useful to ensure features used in your cross-platform code align with your available compilers.
+* [C++ Standards Support in GCC](https://gcc.gnu.org/projects/cxx-status.html)
+* [C++ Support in Clang](https://clang.llvm.org/cxx_status.html)
+* [Microsoft C/C++ language conformance by Visual Studio version](https://learn.microsoft.com/en-us/cpp/overview/visual-cpp-language-conformance?view=msvc-170)
