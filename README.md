@@ -40,3 +40,4 @@ GCC's and Clang's support for C++20 modules is still a bit flaky and lags behind
 * [C++ Standards Support in GCC](https://gcc.gnu.org/projects/cxx-status.html)
 * [C++ Support in Clang](https://clang.llvm.org/cxx_status.html)
 * [Microsoft C/C++ language conformance by Visual Studio version](https://learn.microsoft.com/en-us/cpp/overview/visual-cpp-language-conformance?view=msvc-170)
+* [CMake's cxxmodules](https://cmake.org/cmake/help/latest/manual/cmake-cxxmodules.7.html)
