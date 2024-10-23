@@ -54,8 +54,11 @@ int main(int argc, char* argv[]) try
 {
 	const std::chrono::milliseconds ms{ 1000 };
 	std::cout << std::format("Sleeping for {} ms\n!", (unsigned long)ms.count());
-	NativeAPI::XPlatformSleep(ms.count());
+	NativeAPI::XPlatformSleep(ms);
 	std::cout << std::format("Hello, {}!\n", Get());
+	NativeAPI::DoSomething();
+	NativeAPI::DoEverything();
+	NativeAPI::Whatever();
 	return 0;
 }
 catch (const std::exception& ex)

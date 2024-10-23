@@ -64,6 +64,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>WSL2_1_0</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <UseDebugLibraries>false</UseDebugLibraries>
@@ -80,12 +81,12 @@
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <RemoteCppCompileToolExe>/usr/bin/g++-13</RemoteCppCompileToolExe>
+    <RemoteCppCompileToolExe>/usr/bin/g++-14</RemoteCppCompileToolExe>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <CppLanguageStandard>c++20</CppLanguageStandard>
-      <AdditionalOptions>-fmodules-ts %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>-fmodules-ts -std=c++23 %(AdditionalOptions)</AdditionalOptions>
       <PreprocessorDefinitions>__LINUX__</PreprocessorDefinitions>
       <Verbose>true</Verbose>
     </ClCompile>

@@ -10,9 +10,8 @@ module nativeapi;
 // Currently ICEs in gcc-13/g++-13
 namespace NativeAPI
 {
-	void XPlatformSleep(unsigned long ms2)
+	void XPlatformSleep(std::chrono::milliseconds ms)
 	{
-		std::chrono::milliseconds ms{ ms2 };
 		std::chrono::seconds remS = std::chrono::duration_cast<std::chrono::seconds>(ms);
 		std::chrono::milliseconds remMs = ms - std::chrono::duration_cast<std::chrono::milliseconds>(remS);
 		std::chrono::nanoseconds remNs = std::chrono::duration_cast<std::chrono::nanoseconds>(remMs);

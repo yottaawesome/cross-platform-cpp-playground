@@ -1,4 +1,4 @@
-// Clang in MSVC appears to be completely broken with modules
+// https://developercommunity.visualstudio.com/t/C-modules-not-working-with-clang-cl/10550641?sort=newest
 //import somemodule;
 
 int main(int argc, char* argv[])
